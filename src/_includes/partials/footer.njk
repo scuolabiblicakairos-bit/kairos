@@ -1,0 +1,9 @@
+<footer>
+  <p class="footer-logo">{{ site.autore }} · {{ site.titolo }}</p>
+  <ul class="footer-links">
+    {% for voce in site.menu_footer %}<li><a href="{{ voce.url | url }}">{{ voce.etichetta }}</a></li>
+    {% endfor %}
+  </ul>
+  <p>{{ site.footer_testo }}</p>
+  <p class="footer-sdg">Soli Deo Gloria</p>
+</footer>

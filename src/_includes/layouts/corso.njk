@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+---
+{% set liv = livello | lower %}
+<article class="pagina">
+  <div class="corso-livello-riga">
+    <span class="corso-livello livello-{{ liv }}">Livello {{ livello }}</span>
+    <span class="corso-badge {% if stato == 'Disponibile' %}badge-disponibile{% else %}badge-presto{% endif %}">{{ stato }}</span>
+  </div>
+  <h1>{{ title }}</h1>
+  <p class="sottotitolo">{{ descrizione }}</p>
+  <div class="meta-riga"><span>{{ lezioni }} lezioni</span></div>
+  {% if moduli and moduli.length %}
+  <div class="contenuto"><h2>Cosa si studia</h2><ul>{% for m in moduli %}<li>{{ m }}</li>{% endfor %}</ul></div>
+  {% endif %}
+  <div class="contenuto">{{ content | safe }}</div>
+  <a class="torna" href="{{ '/corsi/' | url }}">← Tutti i corsi</a>
+</article>

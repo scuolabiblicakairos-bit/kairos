@@ -1,0 +1,189 @@
+---
+layout: layouts/base.njk
+description: "Percorsi di formazione biblica evangelica in tre livelli per credenti adulti nelle comunità italiane."
+---
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-eyebrow">Scuola Biblica Kairos</div>
+    <p class="hero-verse-text">
+      «Studiate diligentemente per presentarvi davanti a Dio come un uomo approvato,
+      un operaio che non ha bisogno di vergognarsi, che maneggia rettamente
+      la parola della verità.»
+    </p>
+    <p class="hero-verse-ref">2 Timoteo 2:15</p>
+    <p class="hero-sub">
+      Formazione biblica evangelica per credenti adulti che vogliono pensare
+      con la Scrittura in mano e vivere la propria fede con consapevolezza e profondità.
+    </p>
+    <div class="hero-actions">
+      <a href="#corsi" class="btn-primary">Esplora i corsi</a>
+      <a href="#percorso" class="btn-outline">Come funziona</a>
+    </div>
+  </section>
+
+  <!-- STATS · ATTENZIONE: valori segnaposto, da sostituire con dati reali -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Livelli di studio</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Moduli disponibili</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">Anni di docenza</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Fondato sulla Scrittura</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <p class="section-eyebrow">Formazione biblica evangelica</p>
+    <h1>Studiare la Scrittura<br>con rigore e con il cuore</h1>
+    <p>Un percorso strutturato in tre livelli per credenti adulti che vogliono andare oltre la superficie della Parola, pensare teologicamente e vivere biblicamente nella realtà di oggi.</p>
+  </section>
+
+  <!-- CORSI: schede generate dalla cartella src/corsi (modificabili dal pannello) -->
+  <section class="corsi" id="corsi">
+    <div class="corsi-grid">
+      {% for c in collections.corsi %}{% include "partials/corso-card.njk" %}{% endfor %}
+    </div>
+  </section>
+
+  <!-- PERCORSO -->
+  <section class="percorso" id="percorso">
+    <div class="section-header">
+      <p class="section-eyebrow">Come funziona</p>
+      <h2>Un percorso pensato per crescere</h2>
+      <p>Ogni livello costruisce sul precedente. Non è necessario averli frequentati tutti per iniziare, ma chi li percorre nell'ordine trova un cammino coerente e progressivo.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num step-num-1">1</div>
+        <h3>Scegli il livello</h3>
+        <p>Valuta dove sei nel tuo percorso biblico e scegli il punto di ingresso più adatto alla tua situazione attuale.</p>
+      </div>
+      <div class="step">
+        <div class="step-num step-num-2">2</div>
+        <h3>Studia con metodo</h3>
+        <p>Ogni corso è strutturato in moduli, con materiali scritti, testi biblici e domande di riflessione personale e comunitaria.</p>
+      </div>
+      <div class="step">
+        <div class="step-num step-num-3">3</div>
+        <h3>Approfondisci</h3>
+        <p>Al termine di ogni livello avrai strumenti reali: non solo nozioni, ma un modo diverso e più maturo di leggere la Parola.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CITAZIONE TEOLOGICA -->
+  <section class="citazione-block">
+    <div class="citazione-inner">
+      <div class="citazione-virgola">"</div>
+      <p class="citazione-testo">
+        La teologia non è il lusso degli accademici. È il diritto e il dovere
+        di ogni credente che prende sul serio la Parola di Dio.
+      </p>
+      <p class="citazione-fonte">Dr. Vincenzo Maggio</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS · ATTENZIONE: nomi, chiese e citazioni sono segnaposto, da sostituire con testimonianze reali -->
+  <section class="testimonials" id="testimonianze">
+    <div class="section-header">
+      <p class="section-eyebrow">Chi ha già studiato</p>
+      <h2>Cosa dicono gli studenti</h2>
+      <p>Credenti adulti, pastori e insegnanti che hanno percorso questi corsi nelle comunità evangeliche italiane.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-testo">«Finalmente un percorso che tratta la Bibbia con serietà senza perdere il calore pastorale. Ho imparato a leggere la Scrittura in modo completamente nuovo.»</p>
+        <div class="testimonial-autore">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-nome">Marco R.</div>
+            <div class="testimonial-chiesa">Anziano, Chiesa Evangelica di Milano</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-testo">«Il corso Intermedio mi ha dato gli strumenti che cercavo da anni. La sezione sull'ermeneutica ha trasformato il modo in cui preparo i miei studi biblici.»</p>
+        <div class="testimonial-autore">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-nome">Sara L.</div>
+            <div class="testimonial-chiesa">Responsabile giovani, Roma</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-testo">«Consiglio il corso Basic a tutti i nuovi credenti della nostra chiesa. Parte dal concreto, non dà niente per scontato e porta a una fede più consapevole.»</p>
+        <div class="testimonial-autore">
+          <div class="testimonial-avatar">G</div>
+          <div>
+            <div class="testimonial-nome">Giuseppe T.</div>
+            <div class="testimonial-chiesa">Pastore, Napoli</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTORE -->
+  <section class="autore-section" id="autore">
+    <div class="autore-inner">
+      <div class="autore-visual">
+        <div class="autore-monogram">V</div>
+        <p class="autore-nome">Dr. Vincenzo Maggio</p>
+        <p class="autore-ruolo">Teologo · Divulgatore · Autore</p>
+        <div class="autore-pills">
+          <span class="autore-pill">Tradizione evangelica</span>
+          <span class="autore-pill">Pentecostale italiana</span>
+          <span class="autore-pill">Teologia biblica</span>
+        </div>
+      </div>
+      <div class="autore-testo">
+        <p class="section-eyebrow">Chi sono</p>
+        <h2>Teologia che forma, non che soltanto informa</h2>
+        <p>Sono teologo-divulgatore nella tradizione evangelica pentecostale italiana. Da anni scrivo e insegno con un unico scopo: consegnare ai credenti italiani gli strumenti per riconoscere, discernere e abitare la loro fede in modo biblicamente fondato e spiritualmente vivo.</p>
+        <p>Questi corsi nascono dallo stesso impulso dei miei libri: la convinzione che la Scrittura non sia un testo da ammirare da lontano, ma una Parola da abitare. Non accademici che semplificano, non devozionali che rassicurano: formazione che approfondisce, perché il lettore e lo studente meritano rispetto.</p>
+        <p>La letteratura cristiana evangelica di qualità in italiano è ancora scarsa. Ogni corso pubblicato riempie uno spazio che altrove è già occupato, qui è ancora aperto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <p class="section-eyebrow">Rimani aggiornato</p>
+      <h2>Ricevi nuovi materiali e aggiornamenti</h2>
+      <p>Iscriviti per essere informato sui nuovi corsi, sulle risorse bibliche gratuite e sulle pubblicazioni della Scuola Biblica Kairos.</p>
+      <form class="newsletter-form" action="#" method="post">
+        <label for="newsletter-email" class="sr-only">Il tuo indirizzo email</label>
+        <input class="newsletter-input" id="newsletter-email" name="email" type="email" placeholder="La tua email" required />
+        <button class="newsletter-btn" type="submit">Iscriviti</button>
+      </form>
+      <p class="newsletter-disclaimer">Nessuno spam. Solo contenuti biblici di valore. Puoi disiscriverti in qualsiasi momento.</p>
+    </div>
+  </section>
+
+  <!-- VERSETTO FINALE -->
+  <section class="versetto-chiusura">
+    <blockquote>
+      «Ogni Scrittura è ispirata da Dio ed è utile per insegnare,
+      per riprendere, per correggere, per istruire alla giustizia,
+      affinché l'uomo di Dio sia completo, ben preparato per ogni opera buona.»
+    </blockquote>
+    <cite>2 Timoteo 3:16-17</cite>
+  </section>
+

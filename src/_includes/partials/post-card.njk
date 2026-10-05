@@ -1,0 +1,9 @@
+<article class="post-card">
+  <div class="meta-riga" style="margin-bottom:0">
+    {% set cat = collections.categorie | trovaCategoria(p.data.categoria) %}
+    {% if cat %}<a class="chip" href="{{ ('/categoria/' + cat.fileSlug + '/') | url }}">{{ cat.data.title }}</a>{% endif %}
+    <span class="data">{{ p.date | dataIt }}</span>
+  </div>
+  <h2><a href="{{ p.url | url }}">{{ p.data.title }}</a></h2>
+  <p>{{ p.data.excerpt }}</p>
+</article>

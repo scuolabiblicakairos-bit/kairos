@@ -1,0 +1,19 @@
+{
+  "titolo": "Scuola Biblica Kairos",
+  "autore": "Dr. Vincenzo Maggio",
+  "sottotitolo": "Corsi Biblici · Scuola Biblica Kairos",
+  "descrizione": "Percorsi di formazione biblica evangelica in tre livelli, Basic, Intermedio e Avanzato, per credenti adulti che vogliono studiare la Scrittura con rigore e profondità.",
+  "menu": [
+    { "etichetta": "I Corsi", "url": "/corsi/", "cta": false },
+    { "etichetta": "Blog", "url": "/blog/", "cta": false },
+    { "etichetta": "Il Percorso", "url": "/#percorso", "cta": false },
+    { "etichetta": "L'Autore", "url": "/#autore", "cta": false },
+    { "etichetta": "Inizia ora", "url": "/corsi/", "cta": true }
+  ],
+  "menu_footer": [
+    { "etichetta": "Corsi", "url": "/corsi/" },
+    { "etichetta": "Blog", "url": "/blog/" },
+    { "etichetta": "L'Autore", "url": "/#autore" }
+  ],
+  "footer_testo": "Formazione biblica evangelica per credenti adulti in Italia"
+}

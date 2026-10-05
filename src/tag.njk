@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: "/tag/{{ tag | slugify }}/"
+eleventyComputed:
+  title: "Tag: {{ tag }}"
+---
+{% set elenco = collections.posts | perTag(tag) %}
+<section class="elenco-intro">
+  <p class="section-eyebrow">Tag</p>
+  <h1>{{ tag }}</h1>
+</section>
+<section class="elenco-post">
+  {% for p in elenco %}{% include "partials/post-card.njk" %}{% endfor %}
+</section>
+<p class="vuoto" style="padding-bottom:88px"><a class="torna" href="{{ '/blog/' | url }}">← Tutti gli articoli</a></p>

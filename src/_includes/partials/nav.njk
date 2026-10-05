@@ -1,0 +1,21 @@
+<div class="topbar">
+  <p>«La tua Parola è una lampada al mio piede, e una luce sul mio sentiero.» (Salmi 119:105)</p>
+</div>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="{{ '/' | url }}">
+      <div class="nav-brand-monogram">V</div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">{{ site.autore }}</span>
+        <span class="nav-brand-sub">{{ site.sottotitolo }}</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      {% for voce in site.menu %}<li><a href="{{ voce.url | url }}"{% if voce.cta %} class="nav-cta"{% endif %}>{{ voce.etichetta }}</a></li>
+      {% endfor %}
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Apri il menu di navigazione" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>

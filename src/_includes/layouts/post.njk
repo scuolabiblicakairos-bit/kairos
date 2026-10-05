@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+---
+<article class="pagina">
+  <div class="meta-riga">
+    {% set cat = collections.categorie | trovaCategoria(categoria) %}
+    {% if cat %}<a class="chip" href="{{ ('/categoria/' + cat.fileSlug + '/') | url }}">{{ cat.data.title }}</a>{% endif %}
+    <span>{{ page.date | dataIt }}</span>
+  </div>
+  <h1>{{ title }}</h1>
+  <div class="contenuto">{{ content | safe }}</div>
+  {% if tags and tags.length %}
+  <div class="pagina-tags">
+    {% for t in tags %}<a class="chip chip-tag" href="{{ ('/tag/' + (t | slugify) + '/') | url }}">{{ t }}</a>{% endfor %}
+  </div>
+  {% endif %}
+  <a class="torna" href="{{ '/blog/' | url }}">← Tutti gli articoli</a>
+</article>

@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.categorie
+  size: 1
+  alias: cat
+permalink: "/categoria/{{ cat.fileSlug }}/"
+eleventyComputed:
+  title: "{{ cat.data.title }}"
+---
+{% set elenco = collections.posts | perCategoria(cat.fileSlug) %}
+<section class="elenco-intro">
+  <p class="section-eyebrow">Categoria</p>
+  <h1>{{ cat.data.title }}</h1>
+  {% if cat.data.description %}<p>{{ cat.data.description }}</p>{% endif %}
+</section>
+{% if elenco.length %}
+<section class="elenco-post">
+  {% for p in elenco %}{% include "partials/post-card.njk" %}{% endfor %}
+</section>
+{% else %}
+<p class="vuoto">Nessun articolo in questa categoria.</p>
+{% endif %}
+<p class="vuoto" style="padding-bottom:88px"><a class="torna" href="{{ '/blog/' | url }}">← Tutti gli articoli</a></p>

@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+title: Corsi
+permalink: /corsi/
+---
+<section class="elenco-intro">
+  <h1>I Corsi</h1>
+  <p>Tre livelli, un unico cammino: dalle fondamenta della Parola all'esegesi e alla teologia sistematica.</p>
+</section>
+<section class="corsi-pagina">
+  <div class="corsi-grid">
+    {% for c in collections.corsi %}{% include "partials/corso-card.njk" %}{% endfor %}
+  </div>
+</section>

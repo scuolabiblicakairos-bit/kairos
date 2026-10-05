@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+---
+<article class="pagina">
+  <h1>{{ title }}</h1>
+  {% if sottotitolo %}<p class="sottotitolo">{{ sottotitolo }}</p>{% endif %}
+  <div class="contenuto">{{ content | safe }}</div>
+</article>
