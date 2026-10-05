@@ -2,8 +2,7 @@
 # DA MODIFICARE: sostituisci TUO-UTENTE/NOME-REPO con il tuo repository GitHub
 backend:
   name: github
-  repo: scuolabiblicakairos.github.io
-/KAIROS
+  repo: scuolabiblicakairos-bit/kairos
   branch: main
 
 locale: it
