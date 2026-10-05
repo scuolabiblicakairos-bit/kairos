@@ -1,5 +1,3 @@
-# Configurazione del pannello (Sveltia CMS)
-# DA MODIFICARE: sostituisci TUO-UTENTE/NOME-REPO con il tuo repository GitHub
 backend:
   name: github
   repo: scuolabiblicakairos-bit/kairos
