@@ -2,7 +2,7 @@
 # DA MODIFICARE: sostituisci TUO-UTENTE/NOME-REPO con il tuo repository GitHub
 backend:
   name: github
-  repo: TUO-UTENTE/NOME-REPO
+  repo: ENZO/KAIROS
   branch: main
 
 locale: it
